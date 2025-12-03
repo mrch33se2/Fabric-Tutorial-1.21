@@ -12,5 +12,10 @@
   "block.tutorialmod.magic_block": "Magic Block",
 
   "itemgroup.tutorialmod.custom_items": "Custom Items",
-  "itemgroup.tutorialmod.custom_blocks": "Custom Blocks"
+  "itemgroup.tutorialmod.custom_blocks": "Custom Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This Block Is Very, Very §9MAGICAL§r",
+  "tooltip.tutorialmod.chisel": "Press §eSHIFT§r For more Information",
+  "tooltip.tutorialmod.chisel.shift_down": "This Item Chisels Blocks Into Bricks",
+  "tooltip.tutorialmod.cauliflower.tooltip": "This Is Delicious!"
 }
