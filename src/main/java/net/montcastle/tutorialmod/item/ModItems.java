@@ -17,6 +17,8 @@ public class ModItems {
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)));
 
+    public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }
