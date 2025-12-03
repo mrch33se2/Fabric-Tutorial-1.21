@@ -11,6 +11,6 @@
   "block.tutorialmod.deepslate_pink_garnet_ore": "Deepslate Pink Garnet Ore",
   "block.tutorialmod.magic_block": "Magic Block",
 
-  "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks"
+  "itemgroup.tutorialmod.custom_items": "Custom Items",
+  "itemgroup.tutorialmod.custom_blocks": "Custom Blocks"
 }
