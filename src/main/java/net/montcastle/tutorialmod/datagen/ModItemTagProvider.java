@@ -6,7 +6,6 @@ import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.montcastle.tutorialmod.item.ModItems;
 import net.montcastle.tutorialmod.util.ModTags;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
