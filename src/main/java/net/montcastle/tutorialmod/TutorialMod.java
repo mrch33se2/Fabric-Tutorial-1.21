@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.montcastle.tutorialmod.block.ModBlocks;
+import net.montcastle.tutorialmod.component.ModDataComponentTypes;
 import net.montcastle.tutorialmod.item.ModItemGroups;
 import net.montcastle.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -16,6 +17,8 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItemGroups.registerItemGroups();
+
+        ModDataComponentTypes.registerDataComponentTypes();
 
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
