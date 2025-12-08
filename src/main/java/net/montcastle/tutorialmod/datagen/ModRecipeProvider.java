@@ -91,6 +91,50 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerShapelessRecipe(recipeExporter, ModBlocks.PINK_GARNET_BUTTON, ModBlocks.PINK_GARNET_BLOCK, "", 1);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PINK_GARNET_SWORD, 1)
+                .pattern("P")
+                .pattern("P")
+                .pattern("|")
+                .input('P', ModItems.PINK_GARNET)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_PICKAXE, 1)
+                .pattern("PPP")
+                .pattern(" | ")
+                .pattern(" | ")
+                .input('P', ModItems.PINK_GARNET)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_SHOVEL, 1)
+                .pattern("P")
+                .pattern("|")
+                .pattern("|")
+                .input('P', ModItems.PINK_GARNET)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_AXE, 1)
+                .pattern("PP")
+                .pattern("P|")
+                .pattern(" |")
+                .input('P', ModItems.PINK_GARNET)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.PINK_GARNET_HOE, 1)
+                .pattern("PP")
+                .pattern(" |")
+                .pattern(" |")
+                .input('P', ModItems.PINK_GARNET)
+                .input('|', Items.STICK)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
     }
 
 
