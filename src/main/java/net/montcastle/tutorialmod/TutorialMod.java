@@ -2,11 +2,13 @@ package net.montcastle.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.montcastle.tutorialmod.block.ModBlocks;
 import net.montcastle.tutorialmod.component.ModDataComponentTypes;
 import net.montcastle.tutorialmod.item.ModItemGroups;
 import net.montcastle.tutorialmod.item.ModItems;
+import net.montcastle.tutorialmod.util.HammerUsageEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,5 +26,7 @@ public class TutorialMod implements ModInitializer {
         ModBlocks.registerModBlocks();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
+
+        PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }
